@@ -56,9 +56,9 @@
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
         const newLi = document.createElement("li");
-        const TextLi = document.createTextNode(toDoItem);
+        // const TextLi = document.createTextNode(toDoItem);
 
-        newLi.appendChild(TextLi);
+        newLi.innerText = input.value;
         output.appendChild(newLi);
 
         input.value = ""
