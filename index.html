@@ -37,7 +37,7 @@
       <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
       <input type="text" id="todo-input" name="todo-input">
       <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
-      <input type="submit" id="todo-submit" name="todo-submit">
+      <button id="todo-submit">Submit</button>
 
       <!-- Section output -->
       <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
@@ -56,7 +56,6 @@
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
         const newLi = document.createElement("li");
-        // const TextLi = document.createTextNode(toDoItem);
 
         newLi.innerText = input.value;
         output.appendChild(newLi);
